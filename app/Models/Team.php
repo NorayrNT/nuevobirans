@@ -12,10 +12,4 @@ class Team extends Model
     protected $guarded = ['id'];
 
     public $timestamps = false;
-
-    protected $attributes = [
-        'facebook' => '0',
-        'linkedin' => '0',
-        'instagram' => '0'
-    ];
 }

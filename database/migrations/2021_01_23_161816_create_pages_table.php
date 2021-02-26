@@ -16,10 +16,10 @@ class CreatePagesTable extends Migration
         Schema::create('pages', function (Blueprint $table) {
             $table->tinyIncrements('id');
             $table->char('title');
-            $table->mediumText('content')->default('0');
-            $table->string('img')->default('0');
+            $table->mediumText('content')->nullable();
+            $table->string('img')->nulable();
             $table->string('seo_title');
-            $table->text('seo_description')->default('0');            
+            $table->text('seo_description')->nullable();            
         });
     }
 

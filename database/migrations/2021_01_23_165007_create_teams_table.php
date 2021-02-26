@@ -18,9 +18,9 @@ class CreateTeamsTable extends Migration
             $table->char('name');
             $table->char('office');
             $table->string('image');
-            $table->string('facebook')->default('0');
-            $table->string('linkedin')->default('0');
-            $table->string('instagram')->default('0');
+            $table->string('facebook')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('instagram')->nullable();
         });
     }
 

@@ -14,10 +14,6 @@ class Contact extends Model
 
     public $timestamps = false;
 
-    protected $attributes = [
-        'phone' => '0'
-    ];
-
 
     public function getJson($type,$index = null) {   
         $arr = $this->explode($type);

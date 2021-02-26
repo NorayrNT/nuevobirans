@@ -12,8 +12,4 @@ class Service extends Model
     protected $guarded = ['id'];
 
     public $timestamps = false;
-
-    protected $attributes = [
-        'description' => '0'
-    ];
 }

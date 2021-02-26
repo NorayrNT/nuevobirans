@@ -15,7 +15,7 @@ class CreateMenusTable extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->tinyIncrements('id');
-            $table->unsignedTinyInteger('parent_id')->default('0');
+            $table->unsignedTinyInteger('parent_id')->nullable();
             $table->unsignedTinyInteger('order');
             $table->char('title');
             $table->char('url');

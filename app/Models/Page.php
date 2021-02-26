@@ -11,11 +11,6 @@ class Page extends Model
 
     protected $guarded = ['id'];
 
-    public $timestamps = false;
-
-    protected $attributes = [
-        'content' => '0',
-        'img' => '0'
-    ];    
+    public $timestamps = false;  
     
 }

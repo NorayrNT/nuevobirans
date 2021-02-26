@@ -12,9 +12,5 @@ class Menu extends Model
     protected $guarded = ['id'];
 
     public $timestamps = false;
-
-    protected $attributes = [
-        'parent_id' => '0'
-    ];
     
 }

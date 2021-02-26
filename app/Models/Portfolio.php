@@ -13,12 +13,6 @@ class Portfolio extends Model
 
     public $timestamps = false;
 
-    protected $attributes = [
-        'url' => '0',
-        'description' => '0',
-        'img' => '0',
-    ];
-
     // get and set images attribute
     public function setImgAttribute($images) {
         if (is_array($images)) {

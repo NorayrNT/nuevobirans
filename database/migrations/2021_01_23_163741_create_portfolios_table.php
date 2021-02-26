@@ -16,9 +16,9 @@ class CreatePortfoliosTable extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->mediumIncrements('id');
             $table->char('title');
-            $table->char('url')->default('0');
-            $table->text('description')->default('0');
-            $table->text('img')->default('0');
+            $table->char('url')->nullable();
+            $table->text('description')->nullable();
+            $table->text('img')->nullable();
         });
     }
 

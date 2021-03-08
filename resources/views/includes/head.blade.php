@@ -3,6 +3,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name='csrf_token' content="{{csrf_token()}}" />
     @include('includes.title')
+    <meta name="keywords" 
+    	  content="website, websites, web site, design, web-design, web development, app development, development, ai , AI, 
+                augmented reality, ar , AR, xr , extended reality, mr, mixed reality, seo, site engine optimization, wordpress, 
+                laravel, java, oop, javascript, js, html, mysql, database, css, mongo, mongodb, mongoose, node js,node, express, express js">
     <link rel="icon" type="image\png" href="{{asset('storage/images/logo/favicon_nuevo.png')}}" />
 
     <!-- Fonts -->
@@ -19,4 +23,14 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EB5GJGNGN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1EB5GJGNGN');
+    </script>
 </head>

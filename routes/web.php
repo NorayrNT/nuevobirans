@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "PureController@global");
+Route::get('/', "PureController@index");
 Route::get("/contact","PureController@global");
 Route::get("/about","PureController@global");
 Route::get("/education","PureController@global");

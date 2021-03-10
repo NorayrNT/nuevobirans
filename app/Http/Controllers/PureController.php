@@ -7,14 +7,20 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ValidateEmail;
 use App\Models\SendEmail;
-
+use App\Models\Portfolio;
 
 class PureController extends Controller
 {
     
+    public function index() {
+        $works = Portfolio::paginate(4);
+        
+        return View::make("pages.index",compact('works'));
+    }
+
     public function global(Request $request) {        
         $uri = $request->path();
-        $view = $uri == '/' ? 'pages.index' : "pages.{$uri}";        
+        $view = "pages.{$uri}";        
         
         return View::make($view);
     }

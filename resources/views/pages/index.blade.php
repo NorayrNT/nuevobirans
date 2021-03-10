@@ -33,6 +33,8 @@
     <div id="services">
         @include('includes.services')
     </div>
+
+    @include('includes.portfolio')
     
     <div id='contact_us'>
         @include('includes.contact-us')

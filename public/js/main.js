@@ -19,4 +19,9 @@ $(document).ready(function() {
     $(".m_open,.m_close").click(function() {
         $("#logo_s_part").toggle();
     });
+
+    // Portfolio
+    $(".work_name > p").on('mouseover mouseleave',function() {
+        $(this).parent('.work_name').siblings(".work_img").children("a").children('img').toggleClass('img_show')
+    }); 
 });

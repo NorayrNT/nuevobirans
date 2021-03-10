@@ -6,10 +6,10 @@
                     <div class="col-12 col-sm-6 col-md-3">
                         <div class="work_item">
                             <div class="work_img">
-                                <a href="{{$work->url}}"><img class="img-fluid animated wow fadeIn" src="{{ asset('storage/images/edu2.jpg') }}" /></a>
+                                <a href="{{$work->url}}" target="_blank"><img class="img-fluid animated wow fadeIn" src="{{ asset('storage/'.$work->img[0]) }}" /></a>
                             </div>
                             <div class="work_name animated wow fadeIn">
-                                <p>title</p>
+                                <a href="{{$work->url}}" target="_blank"><p>{{$work->title}}</p></a>
                             </div>
                         </div>
                     </div>               
@@ -17,5 +17,7 @@
             @endif
         </div>
     </div>
-    <div class="work_paginate"></div>
+    <div class="work_paginate">
+        <div class="container">{{ $works->links() }}</div>
+    </div>
 </div>

@@ -21,7 +21,7 @@ $(document).ready(function() {
     });
 
     // Portfolio
-    $(".work_name > p").on('mouseover mouseleave',function() {
+    $(".work_name > a").on('mouseover mouseleave',function() {
         $(this).parent('.work_name').siblings(".work_img").children("a").children('img').toggleClass('img_show')
     }); 
 });

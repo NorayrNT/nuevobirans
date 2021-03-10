@@ -13,7 +13,7 @@ class PureController extends Controller
 {
     
     public function index() {
-        $works = Portfolio::paginate(4);
+        $works = Portfolio::simplePaginate(4);
         
         return View::make("pages.index",compact('works'));
     }

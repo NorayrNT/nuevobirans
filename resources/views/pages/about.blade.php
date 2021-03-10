@@ -9,7 +9,7 @@
                     <div class="inner_content">
                         <h6>About company_name</h6>
                         <h5>who we are</h5>
-                        <p>Since 2019, we assist our customer to transform their products, processes, and people using the most advanced 
+                        <p>Since 2020, we assist our customer to transform their products, processes, and people using the most advanced 
                             technology and design.
                             <br>
                             Our team is aimed at generating and developing new ideas in order to ease lives of others.
